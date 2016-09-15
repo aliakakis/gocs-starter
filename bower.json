@@ -1,0 +1,25 @@
+{
+  "name": "react-starter",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "aliakakis <aliakakis@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/aliakakis/react-starter",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "jquery-ui": "~1.11.4",
+    "lodash": "~4.5.0",
+    "Materialize": "materialize#~0.97.5"
+  }
+}
