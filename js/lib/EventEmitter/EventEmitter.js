@@ -1,4 +1,4 @@
-export default EventEmitter = (() => {
+export const EventEmitter = (() => {
     var registeredEvents = {};
 
     return {
