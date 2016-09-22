@@ -1,17 +1,14 @@
-/*
- * Place any init app code and routes code here
- *
- */
-
 import {GameObject} from './dev/gameobject/gameobject';
 import {Transform} from './dev/components/transformation/transformation';
 import {RenderDomElement} from './dev/components/renderers/renderDomElement';
+import {EventEmitter} from './lib/EventEmitter/EventEmitter';
 
 @GameObject({
     id: "1"
 })
 @Transform()
 @RenderDomElement({
+    attachTo: "#main", // id or class with # or .
     template: `<div>Hello World!</div>`
 })
 class Player {
@@ -29,3 +26,4 @@ let player = new Player({
 });
 
 player.transform.transformX();
+//player.render.renderDomElement(document.querySelector("#main"));
