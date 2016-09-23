@@ -8,7 +8,7 @@ import {EventEmitter} from './lib/EventEmitter/EventEmitter';
 })
 @Transform()
 @RenderDomElement({
-    attachTo: "#main", // id or class with # or .
+    selector: "#main", // id or class with # or .
     template: `<div>Hello World!</div>`
 })
 class Player {
