@@ -25,5 +25,7 @@ let player = new Player({
     playerName: "John"
 });
 
+console.log(player);
+
 player.transform.transformX();
 //player.render.renderDomElement(document.querySelector("#main"));
