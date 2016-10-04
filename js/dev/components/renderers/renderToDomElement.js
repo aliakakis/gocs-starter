@@ -4,9 +4,9 @@
  * @param {class} target - class constructor of the wrapped class
  *
  */
-export const RenderDomElement = (props) => (target) => {
+export const RenderToDomElement = (props) => (target) => {
     target.prototype.render = {
-        renderDomElement: (() => {
+        renderToDomElement: (() => {
             let el = document.querySelector(props.selector);
             el.insertAdjacentHTML('beforeend', props.template);
         })()

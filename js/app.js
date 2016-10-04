@@ -1,13 +1,13 @@
 import {GameObject} from './dev/gameobject/gameobject';
 import {Transform} from './dev/components/transformation/transformation';
-import {RenderDomElement} from './dev/components/renderers/renderDomElement';
+import {RenderToDomElement} from './dev/components/renderers/renderToDomElement';
 import {EventEmitter} from './lib/EventEmitter/EventEmitter';
 
 @GameObject({
     id: "1"
 })
 @Transform()
-@RenderDomElement({
+@RenderToDomElement({
     selector: "#main", // id or class with # or .
     template: `<div>Hello World!</div>`
 })
@@ -25,7 +25,7 @@ let player = new Player({
     playerName: "John"
 });
 
-console.log(player);
+//console.log(player);
 
 player.transform.transformX();
-//player.render.renderDomElement(document.querySelector("#main"));
+//player.render.renderToDomElement(player, "#main");
