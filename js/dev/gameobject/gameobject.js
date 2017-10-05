@@ -7,5 +7,7 @@
  */
 export const GameObject = (props) => (target) => {
     target.prototype.id = props.id;
+    
+    return target;
 };
 
