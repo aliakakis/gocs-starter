@@ -11,4 +11,6 @@ export const RenderToDomElement = (props) => (target) => {
             el.insertAdjacentHTML('beforeend', props.template);
         })()
     };
+    
+    return target;
 };
