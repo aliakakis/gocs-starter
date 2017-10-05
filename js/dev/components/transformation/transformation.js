@@ -10,4 +10,6 @@ export const Transform = (props) => (target) => {
             console.log("Transform X");
         }
     };
+    
+    return target;
 };
